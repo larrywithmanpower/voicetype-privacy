@@ -32,7 +32,7 @@
   <h1>隨口輸入 隱私權政策</h1>
   <p class="updated">最後更新：2026-11-08</p>
 
-  <p>「隨口輸入」是一款語音輸入法：您對著 iPhone 講話，App 把語音轉成文字，經 AI 整理成通順的句子後，輸入到您正在使用的 App。本 App 不建立帳號、不需要登入。以下說明您的資料存在哪裡、什麼情況下會離開您的手機。</p>
+  <p>「隨口輸入」是一款語音輸入法：您對著 iPhone 講話，App 把語音轉成文字，經 AI 整理成通順的句子後，輸入到您正在使用的 App。語音轉文字不需要登入；使用我們代轉的 AI 整理時，需以「使用 Apple 登入」建立帳號。以下說明您的資料存在哪裡、什麼情況下會離開您的手機。</p>
 
   <h2>麥克風與語音</h2>
   <ul>
@@ -45,9 +45,16 @@
   <ul>
     <li>開啟「AI 整理」時，App 會把<strong>這一句語音轉成的文字</strong>（不含錄音），連同您的自訂詞庫與整理規則，送給 Anthropic 的 Claude 模型，整理成通順的句子後傳回。</li>
     <li>沒有自備金鑰的使用者，這段文字會先經過我們在 Google Cloud（台灣機房）上的代轉伺服器，再轉給 Anthropic。代轉伺服器<strong>不儲存您講的內容</strong>，紀錄只記錄時間、字數與處理花費，用於每週免費額度與費用統計。</li>
-    <li>代轉伺服器以 Apple 的 App Attest 機制確認請求來自本 App，並以一組隨機產生、存在您手機鑰匙圈裡的裝置金鑰計算每週用量；這組金鑰不含您的身分資料。</li>
+    <li>代轉伺服器以 Apple 的 App Attest 機制確認請求來自本 App，並依您的帳號計算每週用量。</li>
     <li>自備 Anthropic 金鑰的使用者，文字直接從手機送到 Anthropic，不經過我們的伺服器。</li>
     <li>Anthropic 如何處理 API 資料，請見 <a href="https://www.anthropic.com/legal/privacy">Anthropic 隱私權政策</a>。</li>
+  </ul>
+
+  <h2>帳號（使用 Apple 登入）</h2>
+  <ul>
+    <li>只有使用我們代轉的 AI 整理才需要帳號；自備 Anthropic 金鑰或只用語音轉文字，不需要登入。</li>
+    <li>帳號以「使用 Apple 登入」建立。我們保存 Apple 提供的帳號代碼、帳號顯示名稱（Apple 提供或您自行修改）、已登入的裝置名稱，以及每週使用字數，用於計算免費額度與讓您的 iPhone、Mac 共用同一個帳號。<strong>不保存您講的內容。</strong></li>
+    <li>Mac 可用 iPhone 掃描 QR Code 登入同一個帳號。</li>
   </ul>
 
   <h2>鍵盤與「完整取用」</h2>
@@ -79,7 +86,7 @@
 
   <h2>第三方服務</h2>
   <ul>
-    <li><strong>Apple</strong>：語音辨識、iCloud 同步、App Attest。</li>
+    <li><strong>Apple</strong>：語音辨識、iCloud 同步、App Attest、使用 Apple 登入。</li>
     <li><strong>Anthropic</strong>：AI 整理。</li>
     <li><strong>Google Cloud</strong>：代轉伺服器與接收用量、回饋的伺服器。</li>
   </ul>
@@ -87,6 +94,7 @@
   <h2>如何刪除資料</h2>
   <ul>
     <li>在 App 的紀錄頁可刪除單筆或全部聽寫紀錄。</li>
+    <li>在 App 的「設定 › 帳號」可刪除帳號：我們伺服器上的帳號資料、用量與登入裝置會一併清除，並撤銷本 App 的 Apple 登入授權。</li>
     <li>刪除 App 會清除存在這台裝置上的資料；iCloud 上的同步資料可到 iPhone「設定」›［您的名稱］›「iCloud」›「管理儲存空間」刪除。</li>
     <li>如需刪除已傳送給我們的用量、回饋或樣本，請來信告訴我們。</li>
   </ul>
