@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隨口輸入 隱私權政策</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, "PingFang TC", "Helvetica Neue", sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+      line-height: 1.8;
+      color: #1c1c1e;
+      background: #fff;
+    }
+    h1 { font-size: 1.7rem; margin-bottom: 4px; }
+    .updated { color: #888; font-size: 0.9rem; margin-bottom: 32px; }
+    h2 { font-size: 1.2rem; margin-top: 36px; border-bottom: 1px solid rgba(128,128,128,0.25); padding-bottom: 6px; }
+    a { color: #007aff; word-break: break-all; }
+    ul { padding-left: 1.4em; }
+    footer { margin-top: 48px; font-size: 0.85rem; color: #888; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e5e5e7; background: #1c1c1e; }
+      h1, h2 { color: #fff; }
+      a { color: #6ab0ff; }
+    }
+  </style>
+</head>
+<body>
+  <h1>隨口輸入 隱私權政策</h1>
+  <p class="updated">最後更新：2026-11-08</p>
+
+  <p>「隨口輸入」是一款語音輸入法：您對著 iPhone 講話，App 把語音轉成文字，經 AI 整理成通順的句子後，輸入到您正在使用的 App。本 App 不建立帳號、不需要登入。以下說明您的資料存在哪裡、什麼情況下會離開您的手機。</p>
+
+  <h2>麥克風與語音</h2>
+  <ul>
+    <li>只有在您按下鍵盤上的講話按鈕後才會收音；按停或閒置一段時間後停止。</li>
+    <li><strong>錄音不會儲存，也不會傳送到我們的伺服器。</strong></li>
+    <li>語音轉文字使用 Apple 內建的語音辨識。手機有網路時可能由 Apple 的語音辨識服務處理，Apple 如何處理語音資料，請見 Apple 的隱私權政策。</li>
+  </ul>
+
+  <h2>AI 整理（Anthropic Claude）</h2>
+  <ul>
+    <li>開啟「AI 整理」時，App 會把<strong>這一句語音轉成的文字</strong>（不含錄音），連同您的自訂詞庫與整理規則，送給 Anthropic 的 Claude 模型，整理成通順的句子後傳回。</li>
+    <li>沒有自備金鑰的使用者，這段文字會先經過我們在 Google Cloud（台灣機房）上的代轉伺服器，再轉給 Anthropic。代轉伺服器<strong>不儲存您講的內容</strong>，紀錄只記錄時間、字數與處理花費，用於每週免費額度與費用統計。</li>
+    <li>代轉伺服器以 Apple 的 App Attest 機制確認請求來自本 App，並以一組隨機產生、存在您手機鑰匙圈裡的裝置金鑰計算每週用量；這組金鑰不含您的身分資料。</li>
+    <li>自備 Anthropic 金鑰的使用者，文字直接從手機送到 Anthropic，不經過我們的伺服器。</li>
+    <li>Anthropic 如何處理 API 資料，請見 <a href="https://www.anthropic.com/legal/privacy">Anthropic 隱私權政策</a>。</li>
+  </ul>
+
+  <h2>鍵盤與「完整取用」</h2>
+  <ul>
+    <li>鍵盤需要「允許完整取用」，才能與主 App 溝通收音結果並連上網路。</li>
+    <li>輸入後，鍵盤會短暫讀取游標附近的文字，比對您是否手動改了剛輸入的詞，用來學會您常用的寫法。比對結果只存在您的裝置上。</li>
+    <li>鍵盤不會記錄您用一般按鍵打的字，也不會把它們送出去。</li>
+  </ul>
+
+  <h2>資料存在哪裡</h2>
+  <ul>
+    <li>聽寫紀錄、自訂詞庫、學到的改字規則、使用統計，存在您的裝置上。</li>
+    <li>若您開啟 iCloud 同步，這些資料會透過您自己的 iCloud 帳號（Apple CloudKit 私人資料庫）在您的 iPhone 與 Mac 之間同步；我們看不到這些資料。</li>
+    <li>聽寫紀錄依您在設定頁選的保留天數自動刪除。</li>
+  </ul>
+
+  <h2>傳送給我們的資料</h2>
+  <ul>
+    <li><strong>每日用量</strong>：每天一筆數字摘要，包括聽寫次數、字數、AI 整理次數與花費、App 版本、裝置名稱與您在設定頁填的名稱（沒填則用裝置名稱加隨機代號）。<strong>不含您講的內容。</strong>用於了解使用量與費用。</li>
+    <li><strong>意見回饋</strong>：只有在您主動送出回饋時才會傳送，內容包括您寫的文字、您選擇附上的截圖、最近幾句的結果（可選）、App 與系統版本、手機型號，以及診斷用的時間紀錄。</li>
+    <li><strong>分享樣本</strong>：預設關閉。只有您在設定頁開啟「分享樣本幫忙改進」後，才會上傳聽寫的辨識文字與整理結果，用於改進整理品質；隨時可以關閉。</li>
+  </ul>
+
+  <h2>我們不做的事</h2>
+  <ul>
+    <li>不出售、不出租您的資料，也不分享給廣告商或資料仲介。</li>
+    <li>不放廣告、不追蹤您在其他 App 或網站的行為，App 內沒有第三方分析或廣告套件。</li>
+  </ul>
+
+  <h2>第三方服務</h2>
+  <ul>
+    <li><strong>Apple</strong>：語音辨識、iCloud 同步、App Attest。</li>
+    <li><strong>Anthropic</strong>：AI 整理。</li>
+    <li><strong>Google Cloud</strong>：代轉伺服器與接收用量、回饋的伺服器。</li>
+  </ul>
+
+  <h2>如何刪除資料</h2>
+  <ul>
+    <li>在 App 的紀錄頁可刪除單筆或全部聽寫紀錄。</li>
+    <li>刪除 App 會清除存在這台裝置上的資料；iCloud 上的同步資料可到 iPhone「設定」›［您的名稱］›「iCloud」›「管理儲存空間」刪除。</li>
+    <li>如需刪除已傳送給我們的用量、回饋或樣本，請來信告訴我們。</li>
+  </ul>
+
+  <h2>兒童</h2>
+  <p>本 App 不以未滿 13 歲的兒童為對象，也不會刻意蒐集兒童的資料。</p>
+
+  <h2>政策更新</h2>
+  <p>本政策若有修改，會更新本頁並修改上方的「最後更新」日期。</p>
+
+  <h2>聯絡方式</h2>
+  <p>如有任何疑問請聯繫：<a href="mailto:yuxuanhq@gmail.com">yuxuanhq@gmail.com</a></p>
+
+  <footer>© 2026 Yuxuan · 隨口輸入</footer>
+</body>
+</html>
